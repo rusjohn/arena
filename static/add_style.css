@@ -25,19 +25,8 @@ a {text-decoration: none;}
   .zag {font-size: 14pt; line-height: 30px; text-align: left; width: 84%;}
 }
 
-#menu {backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); background: rgba(255, 255, 255, 0.9); width: 100%; height: 60px; z-index: 900; position: fixed; display: table;  border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DCE1E5; overflow: hidden; font-family: Manrope; font-weight: 400; font-size: 12pt; line-height: 21px; letter-spacing: 0.03em; }
-#menublock {width: 90%; max-width: 1230px; margin: 0 auto; padding-top: 14px;}
-#menublock div {display: table-cell;}
-#mleft {float: left; width: 20%}
-#mcenter {width: 70%; left: 70%; margin-left:-55%; padding-top: 20px; position: fixed; height: 40px; word-spacing: 16px; text-align: center; }
-#mright {float: right; margin-top: 6px; text-align: right; width: 20%; }
- #menu a {text-decoration: none; color: #000; border-bottom: 0px solid rgba(0, 0, 0, 0.3); padding-bottom: 1px;}
- #menu a:hover {text-decoration: none; color: #5E5E5E; border-bottom: 2px solid rgba(0, 0, 0, 0.1); padding-bottom: 0.5px;}
-
  #bottom {animation: show 1.8s; position: fixed; text-align: center; top: 0; margin-top: 90vh; z-index: 990; width: 100%; height: 50px; border-width: 0px; border-style: solid; border-color: #DCE1E5; border-radius: 100px;}
 
- #background {background-image: url(/static/main/back.svg); background-size: 100%; background-repeat: no-repeat }
- #header {animation: show .8s; height: 100vh; border-radius: 0 0 0 0; background-image: url(/static/main/background.svg); background-size: cover; }
  #first {height: 34vh; }
  #start {animation: show 1.4s; margin: 0 auto; text-align: center; width: 70%; max-width: 1000px; height: 80px; font-family: Merriweather; text-transform: none; font-weight: 300; font-size: 64pt; line-height: 70pt; color: #363636; }
   @media screen and (max-width: 900px) {
@@ -77,83 +66,4 @@ a {text-decoration: none;}
  #about #right {display: inline-block; float: left; margin-top: 50px; width: 30%; text-align: right; background: #f5f5f5; font-family: Manrope; font-weight: 300; font-size: 20pt; line-height: 30px; letter-spacing: 0.03em; overflow: hidden;}
  .fact {font-family: Manrope; text-transform: none; font-weight: 300; font-size: 70pt; letter-spacing: 0.03em; margin-bottom: 14px; float: right; }
 
- #projects {max-width: 1250px; width: 90%; margin: auto; text-align: center; display: flex; flex-wrap: wrap; white-space: nowrap; animation: show .8s; text-align: center; }
- h4 {font-family: Manrope; font-weight: 400; font-size: 12pt; margin-top: 12px; margin-bottom: 12px; color: #434343; letter-spacing: 0.020em; } h4 i {color: #858585; font-family: Merriweather; font-weight: 300; margin-left: 6px; } .new {color: #006AE5;}
- .proj {width: 25%; padding: 10px; padding-bottom: 10px; box-sizing: border-box; text-align: left; text-transform: none; font-weight: 400; font-size: 12pt; float: left; overflow: hidden;}
- .proj_nav {width: 25%; padding: 10px; padding-bottom: 0px; box-sizing: border-box; float: left; text-align: left;}
-.bigproj {width: 50%; padding: 10px; padding-bottom: 10px; box-sizing: border-box; text-align: left; text-transform: none; font-weight: 400; font-size: 12pt; float: left;  }
-.bigproj_small {width: 50%; padding: 10px; padding-bottom: 0px; box-sizing: border-box;  text-align: left; text-transform: none; font-weight: 400; font-size: 12pt; float: left; }
-.ebigproj {width: 100%; padding: 10px; box-sizing: border-box; border-radius: 15px; margin: 0 auto; text-align: left; } .ebigproj img {padding: 20px; border-radius: 10px;}
-.startproj {height: 760px; background: #f5f5f5; border-radius: 15px; background-image: url(/static/main/disarm_screen.png); background-size: cover; border-width: 1px; border-style: solid; border-color: #E0E0E0; }
-.startproj#s1 {height: 380px; background: #D7F3FF; background-image: url(/static/main/rail.jpeg); background-size: 100%; border-radius: 15px; border-width: 0px; display: table }
-.addproj {box-sizing: border-box; width: 100%; padding: 10px; }
-.pin {border-radius: 15px; height: 220px; transition: .4s; overflow-x:hidden;} .pin:hover {opacity: 0.8;}
-.logopro {display: table-cell; vertical-align: middle; width: 100%; text-align: center;} .logopro img {border-radius: 5px;}
-.pin#i13 {background: #000; height: 450px; background-image: url(); background-size: cover; display: table; }
-.pin#i12 {background: #EFEFEF; height: 450px; background-image: url(/beta/storeback.svg); background-size: cover; display: table; }
-.pin#i10 {background: #2D3541; height: 450px; background-image: url(/static/main/backmolpine.svg); background-size: cover; display: table; }
-.pin#i9 {background: #020202; background-image: url(/static/main/disback.svg); background-size: cover; display: table; }
-.pin#i8 {background: #f5f5f5; background-image: url(/static/main/foliage.jpeg); background-size: cover; display: table }
-.pin#i7 {background: #0969F8; background-image: url(); background-size: cover; display: table }
-.pin#i6 {background: #F5f5f5; background-image: url(); background-size: cover; display: table; }
-.pin#i5 {background: #01C683; height: 450px; background-image: url(); background-size: cover; display: table; }
-.pin#i5 img {box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);}
-.pin#i4 {background: #FFE500; height: 450px; background-image: url(); background-size: cover; display: table  }
-.pin#i4 img {box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);}
-.pin#i3 {background: #0C1123; background-image: url(); background-size: cover; display: table }
-.pin#i2 {background: #34416C; background-image: url(/static/main/sea.jpeg); background-size: cover; display: table }
-.pin#i1 {background: #f5f5f5; background-image: url(/static/main/maketback.svg); background-size: cover; display: table }
-.pin#i01 {background: #f5f5f5; background-image: url(/static/main/auddback.svg); background-size: cover; display: table }
-
-.chat {margin: 0 auto; margin-top: 40px;}
-.allo {margin-top: 40px; margin-bottom: 60px; }
-.allobutton {width: 100%;}
-
-
-#end {height: 20px; border-top-width: 1px; border-top-style: solid; border-top-color: #DCE1E5; border-radius: 0px; padding: 40px; text-align: center; font-family: Manrope; text-transform: none; font-weight: 400; font-size: 12pt; line-height: 21px; letter-spacing: 0.03em; position: sticky;  z-index: 9999; background: #fff; }
- .mobile {display: none;}
-
-@media screen and (max-width: 1100px) {
-  #projects {width: 98%;}
-  .proj {width: 33.3%; }
-  .proj_nav {display: none;}
-  .bigproj_small {width: 33.3%; }
-}
-
-@media screen and (max-width: 630px) {
-#menu {display: none;}
-
-#navi {position: fixed; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #DCE1E5; background: #fff; width: 100%; height: 56px; top: 0; overflow: scroll;  overflow-x: auto; overflow-y: hidden; white-space: nowrap; word-spacing: 12px; will-change: transform; opacity: 1; transform:translateZ(0); }
-
-#navi div {width: 580px; height: 60px; margin-top: 18px; margin-left: 14px; font-size: 13.2pt; font-family: Manrope; font-weight: 400; letter-spacing: 0.03em; z-index: 999; position: static;}
-#navi a {text-decoration: none; color: #000; border-bottom: 0px solid rgba(0, 0, 0, 0.3); padding-bottom: 1px;}
-#navi a:hover {text-decoration: none; color: #5E5E5E; border-bottom: 2px solid rgba(0, 0, 0, 0.1); padding-bottom: 0.5px;}
-
-#navi::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 0;
-    height: 0;
-    display: none;
-}
-
-::-webkit-scrollbar {
-    display: none; // Safari and Chrome
-}
-
-  #background {background-size: 200%;}
-  #projects {width: 96%;}
-  .proj {width: 50%; padding: 6px; }
-  .proj_nav {width: 50%; display: block; padding: 6px; }
- .bigproj {width: 100%; padding: 6px; }
- .bigproj_small {width: 100%; padding: 6px; }
- .ebigproj {width: 100%; }
- .chat {display: none;}
- .chat_mob {display: block; margin: 0 auto; margin-top: 20px; margin-bottom: -20px;}
- .allo {margin-top: 60px; margin-bottom: 40px; }
- .allobutton {width: 100%;}
- h4 i {display: none;}
- .desktop {display: none;}
- .mobile {display: block; position: fixed; }
- menu img {position: fixed;}
- .pin:hover {opacity: 1;}
 }
