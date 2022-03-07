@@ -42,3 +42,5 @@ box-sizing: border-box;}
    .question {width: 100%; margin: 0; font-weight: 400; font-size: 12pt; line-height: 28px; letter-spacing: 0.03em; }
    #forms {display: none;}
 }
+
+iframe {border-radius: 10px; overflow: hidden;}
