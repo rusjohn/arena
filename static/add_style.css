@@ -4,7 +4,7 @@ from {opacity: 0;} 80% {opacity: 0;} to {opacity: 1;}
 
 body {margin:0; padding:0; background: #FFF url() no-repeat; background-size: 100%; font-weight: 400; font-size: 16pt; line-height: 21px;}
 
-h1 {font-family: Didact Gothic; text-transform: none; font-weight: 300; font-size: 48pt; line-height: 70px; margin-top: -4px; letter-spacing: 0.03em; }
+h1 {font-family: 'Alegreya', serif; text-transform: none; font-weight: 300; font-size: 48pt; line-height: 70px; margin-top: -4px; letter-spacing: 0.03em; }
 p {font-family: Manrope; text-transform: none; font-weight: 400; font-size: 24pt; line-height: 44px; letter-spacing: 0.03em; padding-bottom: 20px; width: 80%; margin: 0 auto; }
 .zag {font-family: Manrope; text-transform: none; font-weight: 400; font-size: 24pt; line-height: 44px; letter-spacing: 0.03em; padding-bottom: 20px; width: 80%; margin: 0 auto; text-align: center; overflow: hidden; padding: 40px;}
 .imge {padding-bottom: 40px; width: 86%; margin: 0 auto; }
