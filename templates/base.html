@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html> <head>
 
+  <link href="https://widgets.radioheart.ru/static/css/app.css" rel="stylesheet">
+
+
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <title>Arena Radio — молодёжная радиостанция с электронной музыкой</title>
@@ -11,12 +14,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Inter:wght@400;500;900&display=swap');
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 
-   <link href="/add_style.css" rel="stylesheet">
-   <link href="/style.css" rel="stylesheet">
+   <style>
+     body {background: #202020 url() no-repeat; background-size: 100%;}
+     p {max-width: 800px;}
+     #logo {width: 98%; margin: 0 auto; margin-top: 32px; margin-bottom: 32px}
+     #textcontent {width: 98%; margin: 0 auto; margin-top: 12px;
+     font-family: Manrope; font-size: 16pt; line-height: 38px; letter-spacing: 0.03em; color: #CECECE;}
+     #player {width: 99%; margin: 0 auto;}
+     .brick-white .player-wrapper {width: 100%; } .marquee:before {content: none;}
+   </style>
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -37,95 +45,54 @@
 </head>
 <body>
 
-<div class="mass">
 
 
-<div class="container">
-  <h1>Это Arena Radio</h1>
-
-    <p class="content_s">
-      Андеграунд-радио с мнениями, словами и электронной музыкой. Мы делаем поток, в котором размываются границы — люди общаются и самовыражаются, верят в будущее и делятся своим настроением без ограничений.
-  </p>
-</div>
-   
-   <style>#player {background: #fff; width: 100%; }</style>
+  <div id="logo">
+    <img src="/projects/arena/arenalogo.svg" width="40%">
+   </div>
 
    <div id="player">
-      
-      <div id="radioheart-player"
-     class="brick-white"
-     data-stream="http://a8.radioheart.ru:8030/RH59309"
-     data-autostart="false"
-     data-volume="0.5"
-     data-logo="https://maket.studio/projects/arena/onair.png"
-     data-playtext="Тестовый эфир"
+
+   <div id="radioheart-player"
+        class="playmonster-white"
+        data-stream="https://listen.myrh.ru/id059977"
+        data-autostart="false"
+        data-volume="0.5"
+        data-playtext="Нажмите play для начала воспроизведения"
 >
-    <div class="player-wrapper">
-        <div class="logo" id="radioheart-player-logo"></div>
-        <div class="player-elements">
-            <div class="controls">
-                <div class="play" id="radioheart-player-play">
-                    <i class="fa fa-play"></i>
-                </div>
-                <div class="pause hidden" id="radioheart-player-pause">
-                    <i class="fa fa-stop"></i>
-                </div>
-            </div>
-            <div class="current-song marquee"
-                 id="radioheart-player-current-song"
-                 data-marquee=""
-            >
-            </div>
-            <div class="clear"></div>
-            <div class="sound-control">
-                <div class="mute-control">
-                    <div class="mutecontrol active" id="radioheart-player-mute"></div>
-                </div>
-                <div class="volume-control">
-                    <div class="volume" id="radioheart-player-volume"></div>
-                </div>
-            </div>
-        </div>
-        <div class="clear"></div>
+    <div class="play-pause-container">
+        <div class="play" id="radioheart-player-play"></div>
+        <div class="pause hidden" id="radioheart-player-pause"></div>
+        <div class="volume" id="radioheart-player-volume"></div>
+
     </div>
 </div>
-     
-
 <script src="https://player.radioheart.ru/js/app.js"></script>
-<link type="text/css" rel="stylesheet" href="https://player.radioheart.ru/css/app.css">
-      
-      <style>.brick-white .player-wrapper {width: 100%; } .marquee:before {content: none;}</style>
-   
-   </div>
-   
-<div class="container_blocks"><div class="question"><h3>Адаптивность</h3>
-  Делаем эфир живым, наполняя его электронной музыкой и подкастами разных жанров</div>
-
-  <div class="question"><h3>Актуальность</h3>
-    Готовим собственные, независимые передачи и повторяем лучшие из выпущенного ранее.</div>
-
-     <div class="question"><h3>Связность</h3>
-         Ведём круглосуточный эфир без перерывов, без привязки к студии и платформе.</div>
-
-         <div class="question"><h3>Доступность</h3>
-           Даём высказаться всем — передаём опыт независимо от сферы, приглашаем разных гостей</div>
-
-           <div class="question"><h3>Свобода</h3>
-            Держимся в рамках свободы слова. Принимаем любые мнения, даже не самые приятные</div>
-
-               <div class="question"><h3>Коммуникация</h3>
-               Пускаем в свой эфир как крупных, так и начинающих авторов и исполнителей</div>
-
+<link type="text/css" rel="stylesheet" href="/projects/arena/player.css">
 </div>
 
-<div class="container">
-  <p class="content">
-  Arena —  первая молодёжная радиостанция, вбирающая в себя любые мнения и настроения. Утром и днём мы запускаем в эфир лучшие шоу, в том числе аналитические и культурные, а вечером и ночью становимся окном в мир настоящей электроники разного темперамента. У нас нет ограничений по формату, потому что, как и живой организм, мы растём и меняемся вместе со зрителями — помочь в выпуске следующего эфирного дня можете даже вы.
-</p>
+<div id="rh-widgets"><div id="podval">
+<div id="textcontent">
+  <p>Андеграунд-радио со словами и электронной музыкой. Мы делаем поток, в котором размываются границы — люди общаются и самовыражаются, верят в будущее и делятся своим настроением без ограничений.</p>
+ </div>
 
-</div>
+ <div id="textcontent">
+   <p>В нашем эфире играет драм-н-бейс, техно, лефтфилд и другие музыкальные жанры</p>
+  </div>
 
-<div id="end"><b>red@arenaradio.ru</b> • 2022</div>
 
- </body></html>
+  <radioheart-inline
+                                              logo="https://billing.radioheart.ru/public_pages/assets/img/rh-wave-logo.jpg"
+                                              locale="ru"
+                                              api-endpoint="https://a8.radioheart.ru/api/json?userlogin=user8030"
+                                              widget="SongsOnAir">
+                                  </radioheart-inline>
+  </div>
+
+
+  <script type="text/javascript" src="https://widgets.radioheart.ru/static/js/manifest.js"></script>
+                                      <script type="text/javascript" src="https://widgets.radioheart.ru/static/js/vendor.js"></script>
+                                      <script type="text/javascript" src="https://widgets.radioheart.ru/static/js/app.js"></script>
+ </div></body></html>
+
 
