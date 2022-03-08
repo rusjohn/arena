@@ -47,9 +47,54 @@
       Андеграунд-радио с мнениями, словами и электронной музыкой. Мы делаем поток, в котором размываются границы — люди общаются и самовыражаются, верят в будущее и делятся своим настроением без ограничений.
   </p>
 </div>
+   
+   <style>#player {background: #fff; width: 400px; }</style>
 
-<iframe src="https://vk.com/video_ext.php?oid=-169023129&id=456239018&hash=c41e778b2f0cc1c8&hd=1" width="100%" height="560" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+   <div id="player">
+      
+      <div id="radioheart-player"
+     class="brick-white"
+     data-stream="https://listen.myrh.ru/id059973"
+     data-autostart="false"
+     data-volume="0.5"
+     data-logo="https://billing.radioheart.ru/avatars/15124128885a2596d897c85.jpg"
+     data-playtext="• Прямой эфир"
+>
+    <div class="player-wrapper">
+        <div class="logo" id="radioheart-player-logo"></div>
+        <div class="player-elements">
+            <div class="controls">
+                <div class="play" id="radioheart-player-play">
+                    <i class="fa fa-play"></i>
+                </div>
+                <div class="pause hidden" id="radioheart-player-pause">
+                    <i class="fa fa-stop"></i>
+                </div>
+            </div>
+            <div class="current-song marquee"
+                 id="radioheart-player-current-song"
+                 data-marquee=""
+            >
+            </div>
+            <div class="clear"></div>
+            <div class="sound-control">
+                <div class="mute-control">
+                    <div class="mutecontrol active" id="radioheart-player-mute"></div>
+                </div>
+                <div class="volume-control">
+                    <div class="volume" id="radioheart-player-volume"></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
 
+<script src="https://player.radioheart.ru/js/app.js"></script>
+<link type="text/css" rel="stylesheet" href="https://player.radioheart.ru/css/app.css">
+   
+   </div>
+   
 <div class="container_blocks"><div class="question"><h3>Адаптивность</h3>
   Делаем эфир живым, наполняя его электронной музыкой и подкастами разных жанров</div>
 
