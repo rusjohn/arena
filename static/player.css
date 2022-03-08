@@ -18,27 +18,27 @@
 }
 
 .playmonster-black .play-pause-container .play {
-  background-image: url("/projects/arena/play.png");
+  background-image: url("/play.png");
 }
 
 .playmonster-black .play-pause-container .play:hover {
-  background: url("/projects/arena/play.png");
+  background: url("/play.png");
 }
 
 .playmonster-black .play-pause-container .play:active {
-  background: url("/projects/arena/play.png");
+  background: url("/play.png");
 }
 
 .playmonster-black .play-pause-container .pause {
-  background: url("/projects/arena/pause.png");
+  background: url("/pause.png");
 }
 
 .playmonster-black .play-pause-container .pause:hover {
-  background: url("/projects/arena/pause.png");
+  background: url("/pause.png");
 }
 
 .playmonster-black .play-pause-container .pause:active {
-  background: url("/projects/arena/pause.png");
+  background: url("/pause.png");
 }
 
 .playmonster-black .play-pause-container .volume {
@@ -87,27 +87,27 @@
 }
 
 .playmonster-white .play-pause-container .play {
-  background-image: url("/projects/arena/play.png");
+  background-image: url("/play.png");
 }
 
 .playmonster-white .play-pause-container .play:hover {
-  background: url("/projects/arena/play.png");
+  background: url("/play.png");
 }
 
 .playmonster-white .play-pause-container .play:active {
-  background: url("/projects/arena/play.png");
+  background: url("/play.png");
 }
 
 .playmonster-white .play-pause-container .pause {
-  background: url("/projects/arena/pause.png");
+  background: url("/pause.png");
 }
 
 .playmonster-white .play-pause-container .pause:hover {
-  background: url("/projects/arena/pause.png");
+  background: url("/pause.png");
 }
 
 .playmonster-white .play-pause-container .pause:active {
-  background: url("/projects/arena/pause.png");
+  background: url("/pause.png");
 }
 
 .playmonster-white .play-pause-container .volume {
