@@ -1,83 +1,82 @@
-<!DOCTYPE html>
-<html> <head>
-
-  <link href="https://widgets.radioheart.ru/static/css/app.css" rel="stylesheet">
-  <meta name="yandex-verification" content="201ec72590e22b2a" />
-
+<html>
+  
+ <title>Arena Radio — радио с электронной музыкой</title>
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>Arena Radio — молодёжная радиостанция с электронной музыкой</title>
 
 <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+
 <link rel="shortcut icon" href="/favicon.ico" />
 <meta property="og:type" content="website" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 
-   <style>
-     body {background: #202020 url() no-repeat; background-size: 100%;}
-     p {max-width: 800px;}
-     #logo {width: 98%; margin: 0 auto; margin-top: 32px; margin-bottom: 32px}
-     #textcontent {width: 98%; margin: 0 auto; margin-top: 12px;
-     font-family: Manrope; font-size: 16pt; line-height: 38px; letter-spacing: 0.03em; color: #CECECE;}
-     #player {width: 99%; margin: 0 auto;}
-     .brick-white .player-wrapper {width: 100%; } .marquee:before {content: none;}
-   </style>
+
+<style>
+  @keyframes show {
+from {opacity: 0;} 80% {opacity: 0;} to {opacity: 1;}
+}
+  body {margin:0; background: #202020 url(/arena/repin.png) no-repeat; background-size: 100%; font-weight: 400; font-size: 16pt; line-height: 21px;}
+  #head {margin:0; padding: 30px; background: rgb(0,0,0); background: linear-gradient(0deg, rgba(0,0,0,0) 16%, rgba(0,0,0,0.4) 100%); width: 100%; height: 300px; }
+  .cntrl {animation: show .8s; margin: 0 auto; margin-top: -30px; width: 56px; height: 56px; backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); background: rgba(0, 0, 0, 0.6); padding: 30px; border-radius: 100px;} .play img {width: 48px; margin-left: 10px;} .pause img {width: 48px; margin-left: 4px;} .noUi-target {display: none;}
+</style>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
+  <div id="head"><img src="/arena/logo.svg"></div>
 
 </head>
+
 <body>
+<div id="player">
+
+    <div class="cntrl">
+      <div class="play-pause-container">
+        <div class="play" id="radioheart-player-play"><img src="https://www.arenaradio.ru/play.png"></div>
+        <div class="pause hidden" id="radioheart-player-pause"><img src="https://www.arenaradio.ru/pause.png"></div>
+    </div>
+    </div>
 
 
 
-  <div id="logo">
-    <img src="/arenalogo.svg" width="40%">
-   </div>
+  <style>#name {position: absolute; padding: 20px; position:absolute; bottom:0; -webkit-user-select: all; /* для Safari */; user-select: all; z-index: 9999}</style>
+  <div id="name">
+    <div class="current-song marquee"
+         id="radioheart-player-current-song"
+         data-marquee=""
+    >
+    </div>
+  </div>
 
-   <div id="player">
-
-   <div id="radioheart-player"
-        class="playmonster-white"
-        data-stream="https://listen.myrh.ru/id059977"
-        data-autostart="false"
-        data-volume="0.5"
-        data-playtext="Нажмите play для начала воспроизведения"
+  <div id="radioheart-player"
+ class="panel-black"
+ data-stream="https://listen.myrh.ru/id059977"
+ data-autostart="false"
+ data-volume="0.7"
+ data-logo="https://billing.radioheart.ru/avatars/15124128885a2596d897c85.jpg"
+ data-playtext="Arena в эфире"
 >
-    <div class="play-pause-container">
-        <div class="play" id="radioheart-player-play"></div>
-        <div class="pause hidden" id="radioheart-player-pause"></div>
-        <div class="volume" id="radioheart-player-volume"></div>
 
+
+<div class="player-wrapper">
+    <div class="controls">
+        <div class="play" id="radioheart-player-play">  </div>
+        <div class="pause hidden" id="radioheart-player-pause">  </div>
+    </div>
     </div>
 </div>
+
 <script src="https://player.radioheart.ru/js/app.js"></script>
-<link type="text/css" rel="stylesheet" href="/player.css">
-</div>
+<link type="text/css" rel="stylesheet" href="/arena/app.css">
+<style>.controls {display: none;!important} .panel-black {background-color: rgba(0, 0, 0, 0); border: 0;}</style>
 
-<div id="rh-widgets"><div id="podval">
-<div id="textcontent">
-  <p>Андеграунд-радио со словами и электронной музыкой. Мы делаем поток, в котором размываются границы — люди общаются и самовыражаются, верят в будущее и делятся своим настроением без ограничений.</p>
- </div>
+</body>
 
- <div id="textcontent">
-   <p>В нашем эфире играет драм-н-бейс, техно, лефтфилд и другие музыкальные жанры</p>
-  </div>
-
-
-  <radioheart-inline
-                                              logo="https://billing.radioheart.ru/public_pages/assets/img/rh-wave-logo.jpg"
-                                              locale="ru"
-                                              api-endpoint="https://a8.radioheart.ru/api/json?userlogin=user8030"
-                                              widget="SongsOnAir">
-                                  </radioheart-inline>
-  </div>
-
-
-  <script type="text/javascript" src="https://widgets.radioheart.ru/static/js/manifest.js"></script>
-                                      <script type="text/javascript" src="https://widgets.radioheart.ru/static/js/vendor.js"></script>
-                                      <script type="text/javascript" src="https://widgets.radioheart.ru/static/js/app.js"></script>
- </div></body></html>
+</html>
 
 
