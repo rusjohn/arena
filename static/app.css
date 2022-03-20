@@ -2658,12 +2658,12 @@
   display: inline-block;
   margin-left: 0px;
   margin-bottom: 10px;
-  font-size: 34pt;
+  font-size: 24pt;
   font-family: Manrope;
   font-weight: 600;
   width: 600px;
   white-space: pre-wrap;
-  line-height: 44px;
+  line-height: 34px;
   color: #fff;
   -webkit-user-select: auto;
   user-select: auto;
