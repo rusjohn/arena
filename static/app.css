@@ -2657,13 +2657,13 @@
   content: attr(data-marquee);
   display: inline-block;
   margin-left: 0px;
-  margin-bottom: 10px;
-  font-size: 24pt;
+  margin-bottom: 0px;
+  font-size: 16pt;
   font-family: Manrope;
-  font-weight: 600;
+  font-weight: 400;
   width: 600px;
   white-space: pre-wrap;
-  line-height: 34px;
+  line-height: 26px;
   color: #fff;
   -webkit-user-select: auto;
   user-select: auto;
