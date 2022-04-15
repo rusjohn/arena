@@ -28,10 +28,11 @@ from {opacity: 0;} 80% {opacity: 0;} to {opacity: 1;}
    body {margin:0; overflow: hidden;  background: #06080F url(https://media.giphy.com/media/hPlsN9Z6JNF4s/giphy.gif) no-repeat; background-size: 100%; min-height: 1200px; font-weight: 400; font-size: 16pt; line-height: 21px;}
   }
   
-  #head {position: fixed; margin: 0 auto; padding: 30px; background: rgb(0,0,0); background: linear-gradient(0deg, rgba(0,0,0,0) 16%, rgba(0,0,0,0.4) 100%); height: 200px; text-align: center; }
+  #head {position: fixed; width: 100%; margin: 0 auto; padding: 30px; background: rgb(0,0,0); background: linear-gradient(0deg, rgba(0,0,0,0) 16%, rgba(0,0,0,0.4) 100%); height: 200px; text-align: center; }
   #head img {top: 20px; }
+  #start {height: 45vh;}
   .cntrl {cursor: pointer; animation: show 1.2s; margin: 0 auto; margin-top: -30px; width: 56px; height: 56px; backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); background: rgba(0, 0, 0, 0.6); padding: 30px; border-radius: 100px;} .play img {width: 48px; margin-left: 10px;} .pause img {width: 48px; margin-left: 4px;} .noUi-target {display: none;}
-  #name {position: absolute; bottom: 0; width: 100%; text-align: center; }
+  #name {position: absolute; bottom: 14px; width: 100%; text-align: center; }
   
   .logo {padding-top: 24px}
 </style>
@@ -50,6 +51,7 @@ from {opacity: 0;} 80% {opacity: 0;} to {opacity: 1;}
 
 <body>
 <div id="player">
+<div id="start">
 
     <div class="cntrl">
       <div class="play-pause-container">
