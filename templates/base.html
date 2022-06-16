@@ -23,7 +23,7 @@
     function nowplay()
     {
         $.ajax({
-            url: "https://rusjohn.ru/radiostat.php",  //Тут указываем файл со скриптами
+            url: "/radiostat.php",  //Тут указываем файл со скриптами
             cache: false,
             success: function(html){
                 $("#radiostat").html(html); //Контейнер для вывода информации
@@ -39,9 +39,6 @@
 </head>
 
 <style>
-  @keyframes show {
-from {opacity: 0;} 80% {opacity: 0;} to {opacity: 1;}
-}
 
 @media screen and (max-width: 799px) {
   body {margin: 0; background: #06080F url(https://media.giphy.com/media/cJQMgFhZ705R5WdodN/giphy.gif) no-repeat; background-size: 130%; font-weight: 400; font-size: 14pt; line-height: 18px;}
@@ -118,7 +115,7 @@ from {opacity: 0;} 80% {opacity: 0;} to {opacity: 1;}
  }
 
  .simple-white .play-pause-container .play {
-     background-image: url(/arena/play.svg);
+     background-image: url(/play.svg);
  }
 
  .simple-white .play-pause-container .play:hover {
