@@ -7,7 +7,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="yandex-verification" content="517174b7029baede" />
- 
+
 <link rel="apple-touch-icon" href="/apple-icon.png">
 
 
@@ -23,7 +23,7 @@
     function nowplay()
     {
         $.ajax({
-            url: "https://www.rusjohn.ru/radiostat.php",  //Тут указываем файл со скриптами
+            url: "/api/index.php",  //Тут указываем файл со скриптами
             cache: false,
             success: function(html){
                 $("#radiostat").html(html); //Контейнер для вывода информации
@@ -39,17 +39,20 @@
 </head>
 
 <style>
- 
- @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
+
+  @keyframes show {
+from {opacity: 0;} 80% {opacity: 0;} to {opacity: 1;}
+}
 
 @media screen and (max-width: 799px) {
-  body {margin: 0; background: #06080F url(https://media.giphy.com/media/cJQMgFhZ705R5WdodN/giphy.gif) no-repeat; background-size: 130%; font-weight: 400; font-size: 14pt; line-height: 18px; font-family: Manrope;}
-  #radiostat {width: 100%; text-align: center; font-family: Manrope; font-weight: 600; font-size: 10pt; line-height: 20pt;}
+  body {margin: 0; background: #06080F url(https://media.giphy.com/media/cJQMgFhZ705R5WdodN/giphy.gif) no-repeat; background-size: 130%; font-weight: 400; font-size: 14pt; line-height: 18px;}
+  #radiostat {width: 100%; text-align: center; font-family: Raleway; font-weight: 600; font-size: 10pt; line-height: 20pt;}
   #ads {display: none;}
 }
 
  @media screen and (min-width: 800px) {
-   body {margin: 0; background: #FFF url(https://media.giphy.com/media/VLPb4R2OKk6YNymM62/giphy-downsized-large.gif) no-repeat 20%; background-size: 100%; font-weight: 600; font-size: 24pt; line-height: 30px; font-family: Manrope;}
+   body {margin: 0; background: #FFF url(https://media.giphy.com/media/VLPb4R2OKk6YNymM62/giphy-downsized-large.gif) no-repeat 20%; background-size: 100%; font-weight: 400; font-size: 16pt; line-height: 21px;}
   }
 
   #head {position: fixed; width: 100%; margin: 0 auto; background: rgb(0,0,0); background: linear-gradient(0deg, rgba(0,0,0,0) 16%, rgba(0,0,0,0.1) 100%); height: 200px; text-align: center; }
@@ -76,11 +79,7 @@
                             <div id="stream_listenters"></div>
 
 
- <div id="start"></div><div class="current-song marquee"
-             id="radioheart-player-current-song"
-             data-marquee=""
-        >
-        </div>
+ <div id="start"></div><div id="radiostat" class="display-8 artist">Загрузка...</div>
 
 
  <div id="fixedplay">
@@ -90,7 +89,7 @@
        data-stream="https://listen.myrh.ru/id060679"
        data-autostart="false"
        data-volume="0.5"
-       data-playtext="Arena в эфире"
+       data-playtext="Нажмите play для начала воспроизведения"
  >
    <div class="play-pause-container">
        <div class="play" id="radioheart-player-play"></div>
@@ -121,19 +120,19 @@
  }
 
  .simple-white .play-pause-container .play {
-     background-image: url(/play.svg);
+     background-image: url(/arena/play.svg);
  }
 
  .simple-white .play-pause-container .play:hover {
-     background: url(/playhov.svg);
+     background: url(/arena/playhov.svg);
  }
 
  .simple-white .play-pause-container .pause {
-     background: url(/pause.svg);
+     background: url(/arena/pause.svg);
  }
 
  .simple-white .play-pause-container .pause:hover {
-     background: url(/pausehov.svg);
+     background: url(/arena/pausehov.svg);
  }
 
  .simple-white .play-pause-container .volume {
@@ -181,13 +180,6 @@
      box-shadow: none;
    }
 
-  
-  .marquee:before {
-    -webkit-animation-name: none; 
-     animation-name: none;
-     height: 100px;
-     color: #FFF;
-}
  </style>
 
 </body>
