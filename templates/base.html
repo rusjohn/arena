@@ -23,7 +23,7 @@
     function nowplay()
     {
         $.ajax({
-            url: "https://rusjohn.ru/radiostat.php",  //Тут указываем файл со скриптами
+            url: "/radiostat.php",  //Тут указываем файл со скриптами
             cache: false,
             success: function(html){
                 $("#radiostat").html(html); //Контейнер для вывода информации
@@ -43,13 +43,13 @@
  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
 
 @media screen and (max-width: 799px) {
-  body {margin: 0; background: #06080F url(https://media.giphy.com/media/cJQMgFhZ705R5WdodN/giphy.gif) no-repeat; background-size: 130%; font-weight: 400; font-size: 14pt; line-height: 18px;}
+  body {margin: 0; background: #06080F url(https://media.giphy.com/media/cJQMgFhZ705R5WdodN/giphy.gif) no-repeat; background-size: 130%; font-weight: 400; font-size: 14pt; line-height: 18px; font-family: Manrope;}
   #radiostat {width: 100%; text-align: center; font-family: Manrope; font-weight: 600; font-size: 10pt; line-height: 20pt;}
   #ads {display: none;}
 }
 
  @media screen and (min-width: 800px) {
-   body {margin: 0; background: #FFF url(https://media.giphy.com/media/VLPb4R2OKk6YNymM62/giphy-downsized-large.gif) no-repeat 20%; background-size: 100%; font-weight: 400; font-size: 16pt; line-height: 21px;}
+   body {margin: 0; background: #FFF url(https://media.giphy.com/media/VLPb4R2OKk6YNymM62/giphy-downsized-large.gif) no-repeat 20%; background-size: 100%; font-weight: 400; font-size: 16pt; line-height: 21px; font-family: Manrope;}
   }
 
   #head {position: fixed; width: 100%; margin: 0 auto; background: rgb(0,0,0); background: linear-gradient(0deg, rgba(0,0,0,0) 16%, rgba(0,0,0,0.1) 100%); height: 200px; text-align: center; }
