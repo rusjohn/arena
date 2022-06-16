@@ -26,8 +26,17 @@
                             $size = "large";
                                                         // Выводим данные
                             echo "<div id='radiostat'>";
+                            
+                            echo "Название потока: $stream_title<br />";
+                                                        
+                            echo "Описание потока: $stream_description<br />";
 
-                            echo "$song";
-
+                            echo "Сейчас в эфире: $song<br />";
+                                                        
+                            echo "Слушателей: $listeners<br />";
+                                                        
                             echo "</div>";
+                            
+                            echo "<a href='"https://vk.com/$stream_description."' />lll</a>";
+                            
                             ?>
