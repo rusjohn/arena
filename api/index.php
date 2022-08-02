@@ -27,8 +27,9 @@
                             $size = "large";
                                                         // Выводим данные
                             echo "<div id='radiostat'>";
-
-                            echo "$song";
-
+                                                                                                                
+                            echo "Сейчас в эфире: $song<br />";
+                                                        
                             echo "</div>";
+                            
                             ?>
