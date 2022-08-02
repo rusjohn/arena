@@ -27,7 +27,7 @@
                                                         // Выводим данные
                             echo "<div id='radiostat'>";
                                                                                                                 
-                            echo "$artist • $song";
+                            echo "$artist • $song • $stream_title • ";
                                                         
                             echo "</div>";
                             
