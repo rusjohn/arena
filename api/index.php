@@ -26,3 +26,5 @@
                             $size = "large";
                                                         // Выводим данные
                             echo "<div id='radiostat'>";
+
+?>
