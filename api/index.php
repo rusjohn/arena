@@ -2,10 +2,6 @@
 
 <?php
                             //НАСТРОЙКИ СКРИПТА//
-                            //Ссылка на картинку, которая будет отображаться, если изображение не найдено в базе LAST.FM
-                            $no_photo_url='http://upload.wikimedia.org/wikipedia/commons/3/37/No_person.jpg';
-                            $width='100'; //ширина картинки
-                            $height='100';  //высота картинки
                             //НЕ ИЗМЕНЯЙТЕ НИЧЕГО НИЖЕ///
                             //LIVE STREAM
                             $data = json_decode(file_get_contents("http://a3.radioheart.ru:8038/json.xsl?mount=/RH60011"));
